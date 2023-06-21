@@ -1,0 +1,218 @@
+
+@font-face{
+    font-family:'Klarissa';
+    src:url('klarissa/Klarissa.ttf')  format('truetype');
+    font-style: normal;
+    font-weight: normal; ;
+}
+html{
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background: #000000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*NAV*/
+.li{
+    display: inline-block;
+    background-color: black;
+    color: #dfdfdf;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 0;
+}
+nav{
+    background-color: rgb(209, 136, 0);
+    margin: 0;
+    padding: 0.5px;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+}
+.li:hover{
+border-bottom: 5px solid orange;
+color: rgb(255, 231, 186);
+animation: anim2 500ms cubic-bezier(0.175, 0.885, 0.32, 0.275) infinite;}
+#Presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+img{
+    margin-right: 50px;
+    margin: 50px 50px 0px 200px
+
+}
+#Nombre_Banda{
+    color: orange;
+    margin-top:250px;
+    font-size: 8rem;
+    font-family: 'Klarissa';
+    
+}
+#Titulo_D{
+    color:#dfdfdf;
+}
+#canvas1{
+  background: black;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+h1{
+    font-size: 3rem;
+    text-align:center ;
+    font-family: 'Klarissa';
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: #000000; 
+    text-shadow: 0px 3px 3px #ff8c08,0px -2px 2px #cbd6d9;
+    
+}
+/*------------------------------------------------------*/
+.img1{
+ margin: auto;
+  width: 100%;
+  height: auto;
+}
+.discography {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.album {
+  padding: 60px;
+  margin: 2px;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden
+}
+
+.album img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.album:hover img { 
+  transform: scale(1.1);
+  filter: grayscale(70%);
+  
+}
+.album h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #ffa136dc;
+  font-family: "Klarissa";
+  letter-spacing: 0.1rem;
+}
+
+.album p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+/*Shows*/
+.centrar{
+  margin: 100px auto 50px auto;
+  display:flex;
+}
+#titulo_1{
+  display: flex;
+  justify-content: center;
+  color: #ff8c08;
+  width: 100%;
+  font-size: 50px;
+  margin:auto;
+  font-family: 'Klarissa';
+}
+#titulo_2{
+  display: flex;
+  justify-content: center;
+  color: #ff8c08;
+  width: 100%;
+  font-size: 50px;
+  margin:auto;
+  margin-bottom: 20px;
+  font-family: 'Klarissa';
+}
+.bloque_informativo_ARENA{
+ position: absolute;
+ padding: 60px;
+ margin: 80px;
+ float: left ;
+ text-align: center;
+ display: inline-block;
+ overflow: hidden
+}
+.bloque_informativo_FECHA{
+  position: absolute;
+  margin-left: 400px;
+}
+.tarjeta{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 30px auto;
+  width: 30%;
+  height: 40px;
+  font-size: 1000;
+  background-color: #ff8c08;
+  color: black;
+}
+.lugar{
+  margin-left: 10px;
+  background-color: white;
+  color:black;
+  font-size: 15px;
+}
+.arena{
+  position: relative;
+  font-weight: bolder;
+  margin-left: 40px;
+  justify-content: center;
+}
+.fecha{
+  margin-left: 40px;
+  font-style: italic;
+}
+
+.info_extra{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfdfdf;
+  justify-content: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 25px auto;
+  width: 50%;
+  height: 50px;
+}
+
+.carousel-fotos {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 500px;
+}
+
+
+
